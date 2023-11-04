@@ -1,8 +1,8 @@
 # Define variables
-$siteUrl = "https://sd36.sharepoint.com/sites/eSIS/"
-$inputFilePath = "D:\Evidence\FileLists\ESIS.txt" # Provide the path to your input file
+$siteUrl = "https://<location>.sharepoint.com/sites/<site>/"
+$inputFilePath = "D:\Evidence\FileLists\<site>.txt" # Provide the path to your input file
 $destinationRootFolder = "D:\Evidence" # Provide the root local path where you want to save the files
-$errorLogFilePath = "D:\Script\ESIS-Errors.txt" # Provide the path for the error log file
+$errorLogFilePath = "D:\Script\<site>-Errors.txt" # Provide the path for the error log file
 
 # Read the list of files from the input file
 $filesToDownload = Get-Content $inputFilePath
